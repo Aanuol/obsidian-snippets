@@ -1,0 +1,164 @@
+/* @settings
+name: Poem Page Styling
+description: by Aanuol
+id: poem-styling
+settings:
+-
+  id: background-url
+  title: Background URL
+  description: Add Background Image
+  type: variable-text
+  default: url("http://")
+- 
+  id: poem-page-color
+  title: Poem Page Color
+  type: variable-color
+  opacity: false
+  format: hex
+  default: '#edece8'
+
+- 
+  id: poem-opacity
+  title: Page Opacity
+  description: So that you can see background 
+  type: variable-number-slider
+  default: 0.75
+  min: 0
+  max: 1
+  step: 0.05
+- 
+  id: poem-font
+  title: Poem Text Font
+  description: Name of the font as it appears on your system
+  type: variable-text
+  default: ''
+- 
+  id: poem-heading-font
+  title: Poem Headings Font
+  description: Name of the font as it appears on your system
+  type: variable-text
+  default: ''
+- 
+  id: text-color
+  title: Text color
+  description:  Font Text Color
+  type: variable-themed-color
+  opacity: true
+  format: hex
+  default-light: '#000000'
+  default-dark: '#000000'
+-
+  id: heading-color
+  title: Headings Text color
+  description: 
+  type: variable-themed-color
+  opacity: true
+  format: hex
+  default-light: '#000000'
+  default-dark: '#000000'
+-
+  id: center-heading
+  title: Center Heading 
+  description: Centers Heading One/1
+  type: class-toggle
+-
+  id: center-text
+  title: Center Text
+  description: Centers Heading Poem Text
+  type: class-toggle
+*/
+
+/*------------------------------------------------------------------------------ POEM STYLING ------------------------------------------------------------------------------ 
+    MIT license: https://mit-license.org/ 
+    Suggested Fonts: IM FELL ENGLISH FOR TEXT then BN Cringe Sans  FOR HEADINGS 
+    Heavily Inspired by ElsaTam (Kapirklaa in Discord)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.poem{
+
+    --font-text: var(--poem-font), serif;
+
+    --h1-color: var(--heading-color);
+    --h2-color: var(--heading-color);
+    --h3-color: var(--heading-color);
+    --h4-color: var(--heading-color);
+    --h5-color: var(--heading-color);
+    --h6-color: var(--heading-color);
+
+    --link-color: var(--text-color);
+
+    --h2-font: var(--poem-heading-font), sans-serif !important;
+    --h1-font: var(--poem-heading-font), sans-serif !important;
+    --h3-font: var(--poem-heading-font), sans-serif !important;
+    --h4-font: var(--poem-heading-font), sans-serif !important;
+    --h5-font: var(--poem-heading-font), sans-serif !important;
+    --h6-font: var(--poem-heading-font), sans-serif !important;
+    
+    color: var(--text-color); /* Text color */
+    opacity: var(--poem-opacity);
+   
+    background-color: var(--poem-page-color); 
+
+    /*--------------------------------*/
+    --scrollbar-thumb-bg: transparent;
+    --scrollbar-active-thumb-bg: transparent;
+    --metadata-display-reading: none; /*Hide Properties*/
+    --blockquote-background-color: transparent !important;
+    --poem-icon: "🙚";
+    max-width: 2000px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+    padding-left: 150px;
+    padding-right: 100px;
+    line-height: 1.6; /* Line height for readability */
+}
+
+
+/*Background Image To Add Texture*/
+.view-content:has(.poem) {
+    /*background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");*//* Use the background url of your liking. https://www.transparenttextures.com/ has great choices */
+    background-image: var(--background-url);
+}
+
+/*Center Headings*/
+.center-heading.HyperMD-header.HyperMD-header-1 {
+    text-align: center !important;
+}
+.center-heading.markdown-preview-view h1{
+    text-align: center !important;
+}
+
+/* Center Text */
+.center-text .markdown-preview-view p {
+    text-align: center;
+}
+/* source view and live preview */
+.markdown-source-view.mod-cm6 .cm-line .center-text  {
+	text-align: center !important;
+}
+
+
+/*Dividers: https://forum.obsidian.md/t/css-snippet-keep-divider-line-from-being-folded-into-headers/69451*/
+
+/*Add Custom Divider*/
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.divider::after,
+.divider::before {
+    content: "";
+    border-bottom: 1px solid var(--text-color);
+    flex: 1;
+}
+
+.divider:not(:empty)::before {
+    margin-right: .25em;
+}
+
+.divider:not(:empty)::after {
+    margin-left: .25em;
+}
+
