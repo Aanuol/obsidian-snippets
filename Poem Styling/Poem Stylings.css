@@ -135,7 +135,17 @@ settings:
 .markdown-source-view.mod-cm6 .cm-line .center-text  {
 	text-align: center !important;
 }
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+      Contribution  by A Mortal Fool(@amortalfool) in Discord
+      Sourced from Obsidian Forum: https://forum.obsidian.md/t/options-to-modify-cursor-style/1091/19
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
+
+body.fancy-cursor .markdown-source-view.mod-cm6.poem .cm-content,
+body .markdown-source-view.mod-cm6.poem .cm-content,
+body.fancy-cursor .mod-cm6.poem .cm-line {
+  caret-color: var(--text-color);
+}
 
 /*Dividers: https://forum.obsidian.md/t/css-snippet-keep-divider-line-from-being-folded-into-headers/69451*/
 
