@@ -22,7 +22,7 @@ You can also center the text, and heading 1 using `center-text` and `center-head
 > [[MediaDB|:LiHome:]] [[2024 - Media Showcase|:RiMovieLine:]]   [[Watch List|:LiFilm:]]  [[Reading List|:LiLibraryBig:]] 
 >
 ```
-
+![Homepage Callouts](https://github.com/Aanuol/obsidian-snippets/blob/main/Callout%20Styling/Homepage%20Callouts.css)
 # Acknowledgements and Contributors 
 
 Contribution  by A Mortal Fool(@amortalfool) in Discord
