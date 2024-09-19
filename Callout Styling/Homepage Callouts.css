@@ -1,0 +1,312 @@
+/*=====================================================================================================================
+                                                   My Top Menu Callout
+=======================================================================================================================*/
+
+/*Navigation Page*/
+.callout[data-callout="top-n"] {
+  display: flex;
+  /*justify-content: center;*/  /* Aligns the items horizontally */
+  /*text-align: center;*/
+  opacity: 70%;
+  padding: 5px;
+  margin-top: auto;
+  gap: 10px; 
+  flex-direction: column;
+  --callout-color: transparent !important;
+}
+/*
+.callout[data-callout="top"] .callout-content {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 10px; 
+}
+*/
+.callout[data-callout="top-n"] .callout-icon,
+.callout[data-callout="top-n"] .callout-title {
+  display: none;
+}
+
+/* General styling for internal and external links */
+.callout[data-callout="top-n"] a,
+.callout[data-callout="top-n"] a.internal-link,
+.callout[data-callout="top-n"] a.external-link
+{
+  color: var(--color-base-50);
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 0.5s ease, background-color 0.5s ease;
+  background-color: var(--color-base-10);
+  background-image: none !important;
+  border-radius: 5px;
+  /*height: 36px;*/
+  line-height: 1.6;
+  padding: 5px 10px;
+  opacity: 0.9;
+  margin: 2px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap; /* Ensures text doesn't wrap within the link */
+}
+
+.callout[data-callout="top-n"] a:hover {
+  color: var(--text-accent);
+  background-color: var(--color-base-10);
+  border-radius: 18px;
+  opacity: 1;
+}
+
+/* Specific hover effect for external links (font change) */
+.callout[data-callout="top-n"] a.external-link:hover {
+  font-family: "Spectral", serif;
+}
+
+/*Center Bar*/
+.callout[data-callout="top-c"] {
+  display: flex;
+  /*justify-content: center;*/  /* Aligns the items horizontally */
+  text-align: center;
+  opacity: 70%;
+  padding: 5px;
+  margin-top: auto;
+  gap: 10px; 
+  flex-direction: column;
+  --callout-color: transparent !important;
+  
+}
+/*
+.callout[data-callout="top"] .callout-content {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 10px; 
+}
+*/
+.callout[data-callout="top-c"] .callout-icon,
+.callout[data-callout="top-c"] .callout-title {
+  display: none;
+}
+
+/* General styling for internal and external links */
+.callout[data-callout="top-c"] a,
+.callout[data-callout="top-c"] a.internal-link,
+.callout[data-callout="top-c"] a.external-link
+{
+  color: var(--color-base-50);
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 0.5s ease, background-color 0.5s ease;
+  background-color: var(--color-base-10);
+  background-image: none !important;
+  border-radius: 5px;
+  /*height: 36px;*/
+  line-height: 1.6;
+  padding: 5px 10px;
+  opacity: 0.9;
+  margin: 2px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap; /* Ensures text doesn't wrap within the link */
+}
+
+.callout[data-callout="top-c"] a:hover {
+  color: var(--text-accent);
+  background-color: var(--color-base-10);
+  border-radius: 18px;
+  opacity: 1;
+}
+
+/* Specific hover effect for external links (font change) */
+.callout[data-callout="top-c"] a.external-link:hover {
+  font-family: "Spectral", serif;
+}
+
+/*Vertical Bar*/
+
+.callout[data-callout="top-vc"] {
+  display: flex;
+  /*justify-content: center;*/  /* Aligns the items horizontally */
+  text-align: center;
+  opacity: 70%;
+  padding: 5px;
+  margin-top: auto;
+  gap: 10px; 
+  flex-direction: column;
+  --callout-color: transparent !important;
+  
+}
+/*
+.callout[data-callout="top"] .callout-content {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 10px; 
+}
+*/
+.callout[data-callout="top-vc"] .callout-icon,
+.callout[data-callout="top-vc"] .callout-title {
+  display: none;
+}
+
+/* General styling for internal and external links */
+.callout[data-callout="top-vc"] a,
+.callout[data-callout="top-vc"] a.internal-link,
+.callout[data-callout="top-vc"] a.external-link
+{
+  color: var(--color-base-50);
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 0.5s ease, background-color 0.5s ease;
+  background-color: var(--color-base-10);
+  background-image: none !important;
+  border-radius: 5px;
+  height: 36px;
+  line-height: 1.6;
+  padding: 5px 10px;
+  opacity: 0.9;
+  margin: 2px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap; /* Ensures text doesn't wrap within the link */
+}
+
+.callout[data-callout="top-vc"] a:hover {
+  color: var(--text-accent);
+  background-color: var(--color-base-10);
+  border-radius: 18px;
+  opacity: 1;
+}
+
+/* Specific hover effect for external links (font change) */
+.callout[data-callout="top-vc"] a.external-link:hover {
+  font-family: "Spectral", serif;
+}
+
+/*Vertical Center*/
+.callout[data-callout="top-v"] {
+  display: flex;
+  flex-direction: column; /* Change to column for vertical alignment */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 70%;
+  padding: 5px;
+  margin-top: auto;
+  gap: 10px; 
+  flex-direction: column;
+  --callout-color: transparent !important;
+  
+}
+/*
+.callout[data-callout="top"] .callout-content {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 10px; 
+}
+*/
+.callout[data-callout="top-v"] .callout-icon,
+.callout[data-callout="top-v"] .callout-title {
+  display: none;
+}
+
+/* General styling for internal and external links */
+.callout[data-callout="top-v"] a,
+.callout[data-callout="top-v"] a.internal-link,
+.callout[data-callout="top-v"] a.external-link
+{
+  color: var(--color-base-50);
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 0.5s ease, background-color 0.5s ease;
+  background-color: var(--color-base-10);
+  background-image: none !important;
+  border-radius: 5px;
+  height: 36px;
+  line-height: 1.6;
+  padding: 5px 10px;
+  opacity: 0.9;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap; /* Ensures text doesn't wrap within the link */
+}
+
+.callout[data-callout="top-v"] a:hover {
+  color: var(--text-accent);
+  background-color: var(--color-base-10);
+  border-radius: 18px;
+  opacity: 1;
+}
+
+/* Specific hover effect for external links (font change) */
+.callout[data-callout="top-v"] a.external-link:hover {
+  font-family: "Spectral", serif;
+}
+
+.callout[data-callout="top"] {
+  display: flex;
+  justify-content: center;  /* Aligns the items horizontally */
+  text-align: center;
+  opacity: 70%;
+  padding: 5px;
+  margin-top: auto;
+}
+/*Vertical Center*/
+.callout[data-callout="top"] .callout-content {
+  display: flex;
+  flex-wrap: wrap; /* Allows links to wrap to a new line when necessary */
+  justify-content: center;
+  gap: 10px; /* Adds space between horizontal items */
+}
+
+.callout[data-callout="top"] .callout-icon,
+.callout[data-callout="top"] .callout-title {
+  display: none;
+}
+
+/* General styling for internal and external links */
+.callout[data-callout="top"] a {
+  color: var(--color-base-50);
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 0.5s ease, background-color 0.5s ease;
+  background-color: var(--color-base-10);
+  border-radius: 5px;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px;
+  opacity: 0.9;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap; /* Ensures text doesn't wrap within the link */
+}
+
+.callout[data-callout="top"] a:hover {
+  color: var(--text-accent);
+  background-color: var(--color-base-10);
+  border-radius: 18px;
+  opacity: 1;
+}
+
+/* Specific hover effect for external links (font change) */
+.callout[data-callout="top"] a.external-link:hover {
+  font-family: "Spectral", serif;
+}
+
+/* Ensure proper spacing and alignment when links overflow */
+.callout[data-callout="top"] .callout-content {
+  gap: 10px; /* Keeps horizontal space between links */
+  flex-wrap: wrap; /* Allows wrapping to the next line if needed */
+}
